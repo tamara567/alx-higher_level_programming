@@ -1,15 +1,24 @@
 #!/usr/bin/python3
 
-
 def safe_print_division(a, b):
     """
-    divides two integers and prints the result
-    catches divide by zero exception
+    Divides 2 integers and prints the result.
+    You have to use try: / except:
+    You have to use "{:d}".format() to print the result.
+    The result of the division should print on the finally: section,
+    preceded by Inside result:
+    You are not allowed to import any module
+
+        Args:
+            a: Integer
+            b: Integer
+
+        Returns: The value of the division, otherwise: None
     """
     try:
-        res = a / b
-    except:
-        res = None
+        result = a / b
+    except ZeroDivisionError:
+        result = None
     finally:
-        print("Inside result: {}".format(res))
-    return res
+        print("Inside result: {}".format(result))
+    return result
