@@ -82,4 +82,3 @@ class Base():
                 return [cls.create(**dct) for dct in json_file]
         except IOError:
             return []
-
