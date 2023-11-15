@@ -329,4 +329,3 @@ class Test_Rectangle_to_dict(TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
